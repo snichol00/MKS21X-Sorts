@@ -1,14 +1,19 @@
 public class Sorts{
   public static void selectionSort(int [] ary) {
+    //this loop keeps track of the index of the array where you will add the next smallest element
     for (int x = 0; x < ary.length; x++){
       int smallest = ary[x];
       int smallidx = x;
+      //this loop loops through the unsorted elements to find the next smallest
       for (int y = x; y < ary.length; y++){
+        //if what is at the current index is smaller than the current title holder, replace it
         if (ary[y] < smallest){
           smallest = ary[y];
           smallidx = y;
         }
       }
+      //once you have looped through all to find the smallest, put it in order
+      // switch the places of what is at the current idx and the small idx so you dont lose what is at the current idx
       ary[smallidx] = ary[x];
       ary[x] = smallest;
     }

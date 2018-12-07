@@ -20,10 +20,14 @@ public class Sorts{
   }
 
   public static void bubbleSort(int[] data){
+    //initial loop that tells how many times you have looped through the array and keeps track of the part of the array that is sorted
     for (int x = 0; x < data.length; x++){
+      //keeps track of current index of looping array
       for (int y = x; y < data.length - 1; y++){
         if (data[y] > data[y+1]){
+          // variable temporarily stores value so it won't be lost while swapping
           int yval = data[y];
+          //swap data
           data[y] = data[y+1];
           data[y+1] = yval;
         }

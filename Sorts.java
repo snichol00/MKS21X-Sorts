@@ -19,6 +19,25 @@ public class Sorts{
     }
   }
 
+  public static void bubbleSort(int[] data){
+    for (int x = 0; x < data.length; x++){
+      for (int y = x; y < data.length - 1; y++){
+        if (data[y] > data[y+1]){
+          int yval = data[y];
+          data[y] = data[y+1];
+          data[y+1] = yval;
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
   // THIS IS TIMOTHY SO's DRIVER
   public static String printArray(int[] ary) {
       String output = "[";

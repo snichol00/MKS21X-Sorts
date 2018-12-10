@@ -44,7 +44,7 @@ public class Sorts{
   }
 
   public static void insertionSort(int[] data){
-    for (int x = 0; x < data.length; x++){
+    for (int x = 1; x < data.length; x++){
       int xval = data[x];
       for (int y = x - 1; y >= 0; y--){
         if (xval < data[y]){
